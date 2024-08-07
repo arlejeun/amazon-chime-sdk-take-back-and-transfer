@@ -130,7 +130,7 @@ export const jsonToContactFlow = (lambdaFunction: Function) => {
       },
       {
         Parameters: {
-          SSML: "Your original calling number is <say-as interpret-as='telephone'>$.Attributes.OriginalCallingNumber</say-as>",
+          SSML: "<speak>Your original calling number is <say-as interpret-as='telephone'>$.Attributes.OriginalCallingNumber</say-as></speak>",
         },
         Identifier: 'PlayOriginalCallingNumber',
         Type: 'MessageParticipant',
